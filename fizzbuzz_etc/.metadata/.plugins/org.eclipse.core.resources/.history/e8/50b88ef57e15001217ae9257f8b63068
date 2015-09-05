@@ -1,0 +1,23 @@
+import java.io.IOException;
+
+public class Fizz {
+	int[] mass;
+	
+	public void fizzbuzz (int n) throws IOException {
+		mass = new int[n];
+		//createmass(n);
+		for(int i = 1; i<=n; i++){
+			switch (i){
+			35*(i / 35):
+				System.out.print(", fizzbuzz");
+			break;
+			7*(i/5):
+				System.out.print(", buzz");
+			break;
+			5*(i/5):
+				System.out.print(", fizz");
+			break;
+			default: System.out.print(", " + i);
+		}}
+	}
+}

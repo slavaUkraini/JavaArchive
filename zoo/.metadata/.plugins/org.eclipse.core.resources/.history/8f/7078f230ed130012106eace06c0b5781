@@ -1,0 +1,37 @@
+
+public class Worker {
+	//String name ;
+	//String prof ;
+
+	private String name;
+	private String prof;
+	private Object Animal;
+
+	public Worker (String name, String prof ){
+		this.name = name;
+		this.prof = prof;
+	}
+
+	public void createW(String name, String prof){
+		Worker one = new Worker(name, prof);
+		one.name = name;
+		one.prof = prof;
+		System.out.println(prof + " " + name + " радий працювати в зоопарку.");
+	}
+	
+	public String getName(){ // метод повертає ім'я
+		return this.name;
+	}
+	
+	public String getProf(){ 
+		return this.prof;
+	}
+	
+	public Animal buying (String name, String type){
+		Animal one = new Animal(name,type);
+		System.out.println(type + " " + name + " радий жити в зоопарку");
+		return one;
+		
+	}
+
+}

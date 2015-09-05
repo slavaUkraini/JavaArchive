@@ -1,0 +1,33 @@
+package ua.com.vita.MyClasses;
+
+public class House {
+/**
+ * @author Vita
+ */
+public void buildHouse(){
+	new House("Панель",1,4);
+}
+
+public void becomeOlder(){
+	age +=50;
+}
+public  String toString(){
+	return " Об'єкт - будинок\n Матеріал - " + material + 
+			"\n Кількість дверей - " + doorsNumber + 
+			"\n Кількість вікон - " + windowsNumber +
+			"\n Вік - " + age;
+}
+
+public House(String material, int doorsNumber, 
+		int windowsNumber){
+	System.out.println("Збудували будинок");
+	this.material = material;
+	this.doorsNumber = doorsNumber;
+	this.windowsNumber = windowsNumber;
+}
+private String material = "Дерево";
+private int doorsNumber = 1;
+private int windowsNumber = 2;
+private int age = 1;
+
+}

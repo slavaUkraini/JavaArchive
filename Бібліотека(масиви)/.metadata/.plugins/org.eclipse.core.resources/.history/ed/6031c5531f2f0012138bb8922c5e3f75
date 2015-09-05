@@ -1,0 +1,27 @@
+package ua.com.vita.krainik.firstPackage;
+
+public class Fibonacci {
+	private Array line;
+	private int lastNumber = 0;
+
+public Fibonacci(int n0, int n1){
+	this.line.addEnd(n0);
+	this.line.addEnd(n1);
+	this.lastNumber = 1;
+}
+public void showLine(int n){
+	/*Процедура виводу перших n елементів ряду*/
+	if(n < 0) System.out.println("Неправильний n!");
+	else if (n <= lastNumber){
+		line.printmass(n);
+	}
+	else{
+		for (int i = lastNumber+1; i<n; i++){
+			System.out.println("Рахую " + n);
+			line.addEnd(line.getElement(n-2)+line.getElement(n-1));
+		}
+		lastNumber = n;
+		line.printmass(n);//or printmass() 
+	}
+}
+}

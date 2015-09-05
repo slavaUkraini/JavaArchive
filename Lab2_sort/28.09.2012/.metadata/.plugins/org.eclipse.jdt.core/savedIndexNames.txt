@@ -1,0 +1,2 @@
+INDEX VERSION 1.126+E:\vita1\Java1\Lab2_sort\28.09.2012\.metadata\.plugins\org.eclipse.jdt.core
+350490179.index

@@ -1,0 +1,12 @@
+{
+  "C:\\Program Files\\Java\\jre6\\lib\\rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "C:\\Program Files\\Java\\jre6\\lib\\rt.jar",
+    "status": "RESOLVED"
+  },
+  "E:\\vita1\\Java1\\Lab2_sort\\Sorting_2.0\\Sorting\\src": {
+    "location": "E:\\vita1\\Java1\\Lab2_sort\\Sorting_2.0\\Sorting\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027E:\\vita1\\Java1\\Lab2_sort\\Sorting_2.0\\Sorting\\src\u0027. Skipped."
+  }
+}

@@ -1,0 +1,7 @@
+package ua.com.vita.MyClasses;
+
+public class Tree {
+private String type = "береза";
+private int age = 10;
+
+}

@@ -1,0 +1,29 @@
+package ua.com.vita.krainik.firstPackage;
+
+public class Fibonacci {
+	private Array line = new Array();//тут ініціалізувати чи краще в конструкторі?
+	private int lastIndex = 0;
+
+public Fibonacci(int n0, int n1){
+	this.line.addEnd(n0);
+	this.line.addEnd(n1);
+	this.lastIndex = 1;
+}
+public void showLine(int n){
+	/*Процедура виводу перших n елементів ряду*/
+	if(n <= 0) System.out.println("Неправильний n!");
+	else if (n <= lastIndex + 1){
+		line.printmass(n);
+	}
+	else{
+		for (int i = lastIndex + 1; i < n; i++){
+			System.out.println("Рахую " + i);
+			System.out.println("line.getElement(i-2) = " + line.getElement(i-2));
+			System.out.println("line.getElement(i-1) = " + line.getElement(i-1));
+			line.addEnd(line.getElement(i-2)+line.getElement(i-1));
+		}
+		lastIndex = n;
+		line.printmass();//or printmass(n) 
+	}
+}
+}

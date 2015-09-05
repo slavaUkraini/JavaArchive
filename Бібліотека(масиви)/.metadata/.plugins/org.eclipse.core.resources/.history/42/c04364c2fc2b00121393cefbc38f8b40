@@ -1,0 +1,44 @@
+import ua.com.vita.krainik.firstPackage.Array;
+import ua.com.vita.krainik.firstPackage.DataInput;
+
+
+public class Tester {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Array ar = new Array();
+		ar.printmass();
+		ar.delEnd();
+		ar.delete(2);
+		ar.delete(0);
+		System.out.println("Введіть 6 елементів");
+		for (int i = 0; i<6; i++)
+		ar.addEnd(DataInput.getInt());
+		System.out.println("Видаляємо останній");
+		ar.delEnd();
+		System.out.println("Виводимо");
+		ar.printmass();
+		System.out.println("Сортуємо за спаданням");
+		ar.sortSpad();
+		System.out.println("Сортуємо за зростанням");
+		ar.sortZrost();
+		System.out.println("Видаляємо перший (з 0 рахунок)");
+		ar.delete(1);
+		System.out.println("Видаляємо нульовий (з 0 рахунок)");
+		ar.delete(0);
+		ar.delete(-1);
+		System.out.println("Виводимо");
+		ar.printmass();
+		System.out.println("Видаляємо увесь");
+		ar.clear();
+		System.out.println("Виводимо");
+		ar.printmass();
+		System.out.println("Сортуємо за зростанням");
+		ar.sortZrost();
+
+		System.out.println("Усьо поки");
+	}
+
+}

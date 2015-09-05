@@ -1,0 +1,21 @@
+import java.io.IOException;
+
+//import java.io.IOException;
+
+/**
+ * Class Arrays
+ * Do not copy, it is my program.
+ * @author Vita Krainik
+ * @version 3.0 since 20.10.2012
+ */
+public class MyArray {
+	//Коли поля просто, а коли privat?
+	int[] mass;
+	public MyArray(int size)throws IOException {
+		for(int i = 1; i <= size; i++){
+			System.out.print("Введіть " + i + "-й елемент масиву: ");
+			int temp = DataInput.getInt();
+			mass[i] = temp;
+		}
+	}	
+}

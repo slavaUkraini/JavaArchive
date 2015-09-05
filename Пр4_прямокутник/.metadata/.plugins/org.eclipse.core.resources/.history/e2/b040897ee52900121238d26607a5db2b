@@ -1,0 +1,33 @@
+import java.awt.geom.Point2D;
+import java.io.IOException;
+
+
+public class Testing {
+
+	/**
+	 * @param args
+	 * @throws IOException 
+	 */
+	public static void main(String[] args) throws IOException {
+		//Adress example = new Adress();
+		//System.out.println(example.toString());
+		System.out.println("Тестувальник для прямокутника");
+		Rectangle rect = new Rectangle();
+		System.out.println(rect.toString());
+		Point2D.Double toch = new Point2D.Double(3,4);
+		System.out.println("Створюємо точку з координатами (3,4), " +
+				"яка знаходиться в центрі прямокутника");
+		System.out.println("Метод перевірки середини повертає: " + rect.checkCentre(toch));
+		System.out.println("Переміщуємо прямокутник, наприклад вліво на 3 і робимо попередню дію");
+		rect.moveleft(3);
+		System.out.println(rect.toString());
+		System.out.println("Метод перевірки середини повертає: " + rect.checkCentre(toch));
+	
+		Encryption one = new Encryption();
+		System.out.println(one.toString());
+		System.out.println(one.encode(5));
+		System.out.println(one.decode(0));
+		System.out.println(one.alphabet_rus.length());
+	}
+
+}

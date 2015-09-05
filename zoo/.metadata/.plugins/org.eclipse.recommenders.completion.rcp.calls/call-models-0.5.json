@@ -1,0 +1,13 @@
+{
+  "C:\\Program Files\\Java\\jre6\\lib\\rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "C:\\Program Files\\Java\\jre6\\lib\\rt.jar",
+    "status": "RESOLVED",
+    "error": "No call model found for \u0027C:\\Program Files\\Java\\jre6\\lib\\rt.jar\u0027. Neither fingerprint \u002771ab84811c0c161383fab662dc3a57e5718f3df3\u0027 nor symbolic name \u0027jre\u0027 are known."
+  },
+  "E:\\vita1\\Java1\\Programs\\zoo\\zoo\\src": {
+    "location": "E:\\vita1\\Java1\\Programs\\zoo\\zoo\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027E:\\vita1\\Java1\\Programs\\zoo\\zoo\\src\u0027. Skipped."
+  }
+}

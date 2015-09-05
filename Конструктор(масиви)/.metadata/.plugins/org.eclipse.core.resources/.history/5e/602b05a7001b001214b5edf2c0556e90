@@ -1,0 +1,16 @@
+import java.io.IOException;
+
+public class MyArrayTest {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) throws IOException {
+		int n = 5;
+		MyArray mass = new MyArray(n);
+		MyArray mass1 = new MyArray(mass.mass);//копіювання поля "масив"
+		MyArray mass2 = new MyArray (mass);//копіювання об'єкту
+		mass2.printmass();
+	}
+
+}

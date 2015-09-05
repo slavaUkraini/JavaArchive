@@ -1,0 +1,2 @@
+package ua.com.vita.MyClasses;
+public class Cottage  extends House {

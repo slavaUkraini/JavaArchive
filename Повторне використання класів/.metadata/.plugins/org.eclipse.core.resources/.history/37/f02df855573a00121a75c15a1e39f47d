@@ -1,0 +1,8 @@
+package ua.com.vita.MyClasses;
+
+public class IdealMen extends Men {
+	public void buildHouse(){
+		House dom = new Cottage();
+		System.out.println(dom);
+	}
+}

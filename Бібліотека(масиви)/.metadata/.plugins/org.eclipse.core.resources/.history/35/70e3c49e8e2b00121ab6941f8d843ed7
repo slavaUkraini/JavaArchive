@@ -1,0 +1,13 @@
+package ua.com.vita.krainik.firstPackage;
+
+public class DataInput {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

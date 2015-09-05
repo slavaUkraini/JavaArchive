@@ -1,0 +1,63 @@
+!SESSION 2012-11-11 09:16:42.718 -----------------------------------------------
+eclipse.buildId=I20120608-1400
+java.version=1.6.0_35
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2012-11-11 11:15:05.500
+!MESSAGE Failed to open search index.
+!SESSION 2012-11-15 10:43:39.562 -----------------------------------------------
+eclipse.buildId=I20120608-1400
+java.version=1.6.0_35
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-11-15 10:53:24.703
+!MESSAGE 'remote-models (http://download.eclipse.org/recommenders/models/juno/, releases+snapshots)' did not send ETAG header for 'org.eclipse.recommenders:index:zip:0.0.0'.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-11-15 10:53:25.687
+!MESSAGE 'remote-models (http://download.eclipse.org/recommenders/models/juno/, releases+snapshots)' did not send ETAG header for 'org.eclipse.recommenders:index:zip:0.0.0'.
+!SESSION 2012-11-15 12:07:01.312 -----------------------------------------------
+eclipse.buildId=I20120608-1400
+java.version=1.6.0_35
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-11-15 12:08:06.000
+!MESSAGE 'remote-models (http://download.eclipse.org/recommenders/models/juno/, releases+snapshots)' did not send ETAG header for 'org.eclipse.recommenders:index:zip:0.0.0'.
+!SESSION 2012-11-15 13:51:24.703 -----------------------------------------------
+eclipse.buildId=I20120608-1400
+java.version=1.6.0_35
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-11-15 13:56:51.656
+!MESSAGE 'remote-models (http://download.eclipse.org/recommenders/models/juno/, releases+snapshots)' did not send ETAG header for 'org.eclipse.recommenders:index:zip:0.0.0'.
+!SESSION 2012-11-15 15:01:58.312 -----------------------------------------------
+eclipse.buildId=I20120608-1400
+java.version=1.6.0_35
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-11-15 16:02:28.703
+!MESSAGE 'remote-models (http://download.eclipse.org/recommenders/models/juno/, releases+snapshots)' did not send ETAG header for 'org.eclipse.recommenders:index:zip:0.0.0'.
+!SESSION 2012-11-15 16:42:21.500 -----------------------------------------------
+eclipse.buildId=I20120608-1400
+java.version=1.6.0_35
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=ru_RU
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2012-11-15 16:44:07.453
+!MESSAGE 'remote-models (http://download.eclipse.org/recommenders/models/juno/, releases+snapshots)' did not send ETAG header for 'org.eclipse.recommenders:index:zip:0.0.0'.

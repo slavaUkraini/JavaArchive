@@ -1,0 +1,13 @@
+package ua.com.vita.krainik.Testing.Programs;
+
+public class testerCuboid {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

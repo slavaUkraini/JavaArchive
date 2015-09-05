@@ -1,0 +1,12 @@
+package ua.com.vita.MyClasses;
+
+class Tree {
+
+	public void cutTree() throws Throwable{
+		this.finalize();
+	}
+	
+private String type = "береза";
+private int age = 10;
+
+}

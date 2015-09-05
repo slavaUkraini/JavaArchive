@@ -1,0 +1,10 @@
+package ua.com.vita.krainik.firstPackage;
+
+public class Fibonacci {
+	private Array line;
+
+public Fibonacci(int n0, int n1){
+	this.line.addEnd(n0);
+	this.line.addEnd(n1);
+}
+}

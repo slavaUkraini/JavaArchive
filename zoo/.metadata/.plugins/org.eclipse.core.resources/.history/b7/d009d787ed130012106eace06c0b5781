@@ -1,0 +1,28 @@
+import java.io.IOException;
+
+
+public class main {
+
+	/**
+	 * @param args
+	 * @throws IOException 
+	 */
+	public static void main(String[] args) throws IOException {
+		System.out.println("Welcome to the zoo!");
+		
+		System.out.println("Name of the worker!");
+		String nameW = DataInput.getString();
+		System.out.println("Profession of the worker!");
+		String prof = DataInput.getString();
+		Worker some = new Worker (nameW,prof);
+		
+		System.out.println("Name of the animal!");
+		String name = DataInput.getString();
+		System.out.println("Type of the animal!");
+		String type = DataInput.getString();
+		some.buying(name, type);
+		
+
+	}
+
+}

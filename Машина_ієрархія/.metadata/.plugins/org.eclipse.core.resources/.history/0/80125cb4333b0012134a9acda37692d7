@@ -1,0 +1,7 @@
+package ua.com.vita.Cars_Pr6;
+
+public class Bus extends Car {
+	public int storeys = 1; //кількість поверхів
+	public int maxpasengers = 7; //кількість пасажирів
+
+}

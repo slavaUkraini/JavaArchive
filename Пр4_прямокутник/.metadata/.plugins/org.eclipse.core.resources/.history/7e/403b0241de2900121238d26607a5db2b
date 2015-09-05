@@ -1,0 +1,37 @@
+
+public class Encryption {
+private String s;
+static String alphabet_rus = ""; //я зробила поки що т≥льки дл€ рос≥йського алфав≥ту
+
+public Encryption(){
+	this("эю€абв");
+}
+public Encryption(String s){
+	this.s = s;
+	for(char ch='а';ch<='€';ch++){//ќце мен≥ не подобаЇтьс€
+        alphabet_rus+=ch;
+    }
+}
+
+//“ут n - це к≥льк≥сть позиц≥й, на €ку будемо зсувати стр≥чку
+public String encode(int n){
+	String newStr = "";
+	for(int i = 0; i<s.length(); i++){
+		newStr+=alphabet_rus.charAt((alphabet_rus.indexOf(s.charAt(i)) + n)%alphabet_rus.length());
+	}
+	return newStr;
+}
+//по сут≥, те саме, що й encode(-n)
+public String decode(int n){
+	String newStr = "";
+	for(int i = 0; i<s.length(); i++){
+		newStr+=alphabet_rus.charAt((alphabet_rus.indexOf(s.charAt(i))-n)%alphabet_rus.length());
+	}
+	return newStr;
+}
+public String toString(){ //а що, просто вивести ми не можемо? через System.out.println()
+	return " string = " + s;
+}
+}
+
+

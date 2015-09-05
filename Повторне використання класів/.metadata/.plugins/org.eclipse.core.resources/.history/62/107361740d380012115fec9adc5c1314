@@ -1,0 +1,10 @@
+package ua.com.vita.MyClasses;
+
+public class Cottage  extends House {
+
+	public PentHouse(String material, int doorsNumber, int windowsNumber) {
+		super(material, doorsNumber, windowsNumber);
+		
+	}
+
+}

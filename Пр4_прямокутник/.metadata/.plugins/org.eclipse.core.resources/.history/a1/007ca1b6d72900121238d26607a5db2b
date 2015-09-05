@@ -1,0 +1,18 @@
+
+public class Encryption {
+private String s;
+static String alphabet_rus = "";
+
+public Encryption(){
+	this("Good morning");
+	for(char ch='A';ch<='Z';ch++){
+        alphabet_rus+=ch;
+        
+    }System.out.println(alphabet_rus);
+}
+public Encryption(String s){
+	this.s = s;
+}
+
+}
+

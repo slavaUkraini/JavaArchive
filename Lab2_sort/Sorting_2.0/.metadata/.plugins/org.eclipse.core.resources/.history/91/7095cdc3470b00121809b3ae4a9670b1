@@ -1,0 +1,24 @@
+
+public class Arrays {
+	int[] mass;
+	
+	public void createmass () {
+		int i=5;
+		createmass(i);
+	}
+	public void createmass (int[]a) {//це копіювання масиву
+		mass = new int[a.length];
+		for (int i = 0; i<a.length;i++){
+			mass[i] = a[i];
+		}	
+	}
+	public void createmass (int n){
+		mass = new int[n];
+	}
+	public void printmass (int[]a) {
+		for (int i = 0; i < a.length; i++){
+			System.out.print(a[i]);
+		}
+	}
+
+}

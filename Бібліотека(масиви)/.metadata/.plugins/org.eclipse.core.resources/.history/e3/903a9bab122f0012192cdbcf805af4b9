@@ -1,0 +1,37 @@
+import ua.com.vita.krainik.firstPackage.Factorial;
+
+public class TesterFactorial {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Factorial test = new Factorial();
+		System.out.println("Факторіал 0 = " + test.cashFactorialTest(0));
+		System.out.println("---------------------------");
+		System.out.println("Факторіал 5 = " + test.cashFactorialTest(5));
+		System.out.println("---------------------------");
+		System.out.println("Факторіал 3 = " + test.cashFactorialTest(3));
+		System.out.println("---------------------------");
+		System.out.println("Факторіал 6 = " + test.cashFactorialTest(6));
+		System.out.println("---------------------------");
+		System.out.println("Дякую!");
+		Factorial test2 = new Factorial();
+		System.out.println("---------------------------");
+		System.out.println("Створюємо новий об'єкт і шукаємо факторіал 6");
+		System.out.println("Факторіал 6 = " + test2.cashFactorialTest(6));
+		System.out.println("---------------------------");
+		System.out.println("Дякую!");
+		Factorial test3 = new Factorial();
+		System.out.println("Факторіал 0 = " + test3.cashFactorial(0));
+		System.out.println("---------------------------");
+		System.out.println("Факторіал 5 = " + test3.cashFactorial(5));
+		System.out.println("---------------------------");
+		System.out.println("Факторіал 3 = " + test.cashFactorialTest(3));
+		System.out.println("---------------------------");
+		System.out.println("Факторіал 6 = " + test.cashFactorialTest(6));
+		System.out.println("---------------------------");
+		System.out.println("Дякую!");
+	}
+
+}

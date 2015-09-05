@@ -1,0 +1,9 @@
+package ua.com.vita.krainik.firstPackage;
+
+public class Fibonacci {
+	private Array str;
+
+	public Fibonacci(el0,el1){
+		
+	}
+}

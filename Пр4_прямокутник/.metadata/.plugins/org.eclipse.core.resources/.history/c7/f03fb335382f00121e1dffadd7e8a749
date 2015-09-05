@@ -1,0 +1,106 @@
+import java.awt.geom.Point2D;
+/**
+ * Клас прямокутника
+ * 4 поля - координати прямокутника на декартовій площині 
+ * @author Vita Krainik
+ * @version 1.0 since 8.11.2012
+ *
+ * @param args
+ * @throws IOException 
+ */
+
+public class Rectangle {
+	
+private double x1;
+private double x2;
+private double y1;
+private double y2;
+
+//Андрію Миколайовичу, чи є в Java функція мінімуму і максимуму для double?
+//Функція знаходження мінімуму, використовується при об'єднанні і перетині
+private double min(double a, double b) {
+	return (a<b)?a:b;
+}
+
+//Функція знаходження максимуму, використовується при об'єднанні і перетині
+private double max(double a, double b) {
+	return (a>b)?a:b;
+}
+
+//Що йде спочатку, ptivat чи конструктор?
+public Rectangle(){
+	this(2,4,2,6);
+}
+
+public Rectangle(double x1, double x2, double y1, double y2) {
+	this.x1	= x1;
+	this.x2	= x2;
+	this.y1	= y1;
+	this.y2	= y2;
+}
+//Метод переміщення прямокутника вверх на n координат
+public void moveup(double n){
+	y1 = y1+n;
+	y2 = y2+n;
+	return;
+}
+
+//Метод переміщення прямокутника на n координат вниз
+public void movedown(double n){
+	y1 = y1-n;
+	y2 = y2-n;
+	return;
+}
+
+//Метод переміщення прямокутника на n координат вправо
+public void moveright(double n){
+	x1 = x1+n;
+	x2 = x2+n;
+	return;
+}
+
+//Метод переміщення прямокутника на n координат вліво
+public void moveleft(double n){
+	x1 = x1-n;
+	x2 = x2-n;
+	return;
+}
+
+//Метод перевірки, чи точка - середина прямокутника
+public boolean checkCentre(Point2D.Double toch){
+	if (toch.x == (x1 + x2)/2 && toch.y == (y1 + y2)/2)
+	return true;
+	else return false;
+}
+
+//Метод об'єднання прямокутників
+public Rectangle combine(Rectangle rect){
+	Rectangle newRect = new Rectangle(0,0,0,0);
+	newRect.x1 = min(x1,rect.x1);
+	newRect.x2 = max(x2,rect.x2);
+	newRect.y1 = min(y1,rect.y1);
+	newRect.y2 = max(y2,rect.y2);
+	return newRect;
+}
+
+//Метод перетину прямокутників
+public Rectangle cross (Rectangle rect){
+	Rectangle newRect = new Rectangle(0,0,0,0);
+	if(x2<=rect.x1||rect.x2<=x1||y2<=rect.y1||rect.y2<=y1){
+		System.out.println("Прямокутники не перетинаються!");
+	}
+	else{
+		newRect.x1 = max(x1,rect.x1);
+		newRect.x2 = min(x2,rect.x2);
+		newRect.y1 = max(y1,rect.y1);
+		newRect.y2 = min(y2,rect.y2);
+	}
+	return newRect;
+}
+
+
+public String toString(){
+	return " x1 = " + x1 + "\n x2 = " + x2 + "\n y1 = " + y1 + "\n y2 = " + y2;
+}
+
+}

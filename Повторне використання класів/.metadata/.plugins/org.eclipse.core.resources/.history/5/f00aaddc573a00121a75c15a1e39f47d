@@ -1,0 +1,48 @@
+package ua.com.vita.MyClasses;
+
+import java.util.Random;
+
+public class Men {
+	//Клас чоловіків
+	public Men(String name, int age, String jobStatus){
+		this.name = name;
+		this.age = age;
+		this.jobStatus = jobStatus;
+		Random temp = new Random();
+		int t = temp.nextInt(3)
+		switch (t){
+		case 0: character = "Сангвінік"; break;
+		case 1: character = "Флегматик"; break;
+		case 2: character = "Холерик"; break;
+		default: character = "Меланхолік";
+		}
+		
+	}
+	
+	public void buildHouse(){
+		House dom = new House("Панель",1,4);
+		System.out.println(dom);
+	}
+	
+	public Men bornSon(String name){
+		//метод народити сина
+		//він не обов'язково має сам народжувати =)
+		Men son = new Men(name,1,"безробітний");
+		//this.clone();
+		return son;
+	}
+	
+	public void plantTree(){
+		//метод посадити дерево
+		
+	}
+	public String toString(){
+		return name + "\nВік: " + age + "\n" + jobStatus + "\nТемперамент: " + character;
+	}
+	
+	protected int age = 25;
+	protected String jobStatus = "Тракторист";
+	private String name = "Джамшут";	
+	private String character = "Меланхолік";
+		
+}

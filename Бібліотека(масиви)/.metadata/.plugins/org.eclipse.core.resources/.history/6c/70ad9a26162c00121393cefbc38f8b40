@@ -1,0 +1,43 @@
+package ua.com.vita.krainik.firstPackage;
+
+import java.math.BigInteger;
+
+/**
+ * Class FactCache
+ * Do not copy, it is my program
+ * @author Vita Krainik
+ * @version 2.0 since 4.10.2012
+ */
+
+public class Factorial {
+	static Array factorValue = new Array();
+	private static int lastFactNumber=0;
+	
+	public Factorial(){
+		this(0);
+	}
+	
+	public Factorial(int i){
+		this.cashFact = new BigInteger[i+1];
+		cashFact[0]=BigInteger.valueOf(1);
+		cashFact[1]=BigInteger.valueOf(1);
+		this.lastFactNumber=1;
+	}
+	
+	public int fact(int n){
+		/*Обрахування факторіалу цілого числа за допомогою кешування*/
+		int rez = 0;
+		if(n == 0){
+			factorValue.addEnd(1);
+			rez = factorValue.getElement(0);
+		}
+		else if (n > 0) {
+			factorValue[n]=n*fact(n-1);
+			rez = factorValue.[n];
+		}
+		return rez;
+	}
+	
+	
+}
+

@@ -1,0 +1,45 @@
+import ua.com.vita.krainik.firstPackage.*;
+
+public class Tester {
+	/**
+	 * Class Tester
+	 * for Arrays
+	 * 
+	 * Do not copy, it is my program.
+	 * @author Vita Krainik
+	 * @version 4.0 since 11.11.2012
+	 */
+	public static void main(String[] args) {
+		Array ar = new Array();
+		ar.printmass();//перевірка
+		ar.delEnd();//перевірка
+		System.out.println("Введіть 6 елементів");
+		for (int i = 0; i<6; i++)
+		ar.addEnd(DataInput.getInt());
+		ar.printmass();
+		ar.printmass();
+		System.out.println("Видаляємо останній");
+		ar.delEnd();
+		System.out.println("Виводимо");
+		ar.printmass();
+		System.out.println("Сортуємо за спаданням");
+		ar.sortSpad();
+		System.out.println("Сортуємо за зростанням");
+		ar.sortZrost();
+		System.out.println("Виводимо 10, 4, 0, 3 елементи");
+		System.out.println(ar.getElement(10));
+		System.out.println(ar.getElement(4));
+		System.out.println(ar.getElement(0));
+		System.out.println(ar.getElement(3));
+		ar.findElement(4);
+		ar.findElement(10);		
+		System.out.println("Виводимо");
+		ar.printmass();
+		System.out.println("Видаляємо увесь");
+		ar.clear();
+		System.out.println("Виводимо");
+		ar.printmass();
+		System.out.println("Усьо поки");
+	}
+
+}

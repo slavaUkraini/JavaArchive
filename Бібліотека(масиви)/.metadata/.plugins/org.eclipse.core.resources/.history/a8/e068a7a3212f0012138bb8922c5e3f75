@@ -1,0 +1,14 @@
+import ua.com.vita.krainik.firstPackage.Fibonacci;
+public class TesterFibbonacci {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Fibonacci test = new Fibonacci(0,1);
+		test.showLine(1);
+		test.showLine(2);
+		test.showLine(3);
+	}
+
+}

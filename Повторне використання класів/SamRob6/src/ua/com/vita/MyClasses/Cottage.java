@@ -1,0 +1,40 @@
+package ua.com.vita.MyClasses;
+
+class Cottage  extends House {
+	/**
+	 * Розширений клас Будинку - котедж
+	 * нові поля - ціна і басейн
+	 * @author Vita Krainik
+	 * @version 1.0 since 29.11.2012
+	 *
+	 * @param args
+	 */
+	//наш новий клас - це має бути частковий випадок
+	//чи удосконалений попередній клас
+	public Cottage() {
+		super("Цегла", 2, 8);
+		System.out.println("Це вже не просто будинок, це котедж.");
+	}
+	public String toString(){
+		//пробуємо різні способи ініціалізації
+		//відкладена ініціалізація
+		if (pool==null) pool = new Pool();
+		return super.toString()+ " Ціна = " + price + "\n і плюс є басейн";
+	}
+	private int price;
+	private Pool pool;
+	{
+		price = 100000;
+		pool = new Pool();
+	}
+	private class Pool{
+		/**
+		 * Клас Басейн
+		 * поле - розмір басейну
+		 */
+		public Pool(){
+			System.out.println("Ми купили басейн.");
+			}
+		private double size = 100;
+		}
+}

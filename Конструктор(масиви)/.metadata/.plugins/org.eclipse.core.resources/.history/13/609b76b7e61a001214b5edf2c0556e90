@@ -1,0 +1,12 @@
+import java.io.IOException;
+public class MyArrayTest {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		int n = 5;
+		MyArray mass = new MyArray(n);
+	}
+
+}

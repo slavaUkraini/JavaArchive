@@ -1,0 +1,15 @@
+import java.io.IOException;
+public class Testing {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) throws IOException {
+		Arrays myArray = new Arrays();
+		int n = DataInput.getInt();
+		
+		myArray.createmass(n);
+
+	}
+
+}

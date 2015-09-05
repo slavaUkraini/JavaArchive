@@ -1,0 +1,24 @@
+package ua.com.vita.MyClasses;
+
+public class IdealMen extends Men {
+	public IdealMen(String name, int age, String jobStatus,String degree) {
+		super(name, age, jobStatus);
+		getEducation(degree);
+	}
+
+	public void buildHouse(){
+		House dom = new Cottage();
+		System.out.println(dom);
+	}
+	public void getEducation(String degree){
+		education = degree;
+	}
+	public String toString(){
+		return super.toString() + "\nОсвіта: " 
+				+ education + "\nТа ще й з почуттям гумору!";
+	}
+	private String education = "Школяр";
+	//кожен нормальний чоловік повинен мати почуття гумору
+	final private boolean humor = true;
+	
+}

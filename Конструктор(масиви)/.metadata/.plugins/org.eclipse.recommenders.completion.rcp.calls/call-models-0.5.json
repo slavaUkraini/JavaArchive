@@ -1,0 +1,12 @@
+{
+  "E:\\vita1\\Java1\\Programs\\Конструктор(масиви)\\Sorting 3.0\\src": {
+    "location": "E:\\vita1\\Java1\\Programs\\Конструктор(масиви)\\Sorting 3.0\\src",
+    "status": "UNRESOLVED",
+    "error": "No class path info available for \u0027E:\\vita1\\Java1\\Programs\\Конструктор(масиви)\\Sorting 3.0\\src\u0027. Skipped."
+  },
+  "C:\\Program Files\\Java\\jre6\\lib\\rt.jar": {
+    "coordinate": "jre:jre:zip:call:1.0.0",
+    "location": "C:\\Program Files\\Java\\jre6\\lib\\rt.jar",
+    "status": "RESOLVED"
+  }
+}

@@ -1,0 +1,41 @@
+
+
+public class Animal {
+	
+	private String name;//що воно таке, оце поле
+	private String type;
+	private int health;
+	private int food;
+	private boolean avail;
+
+	public Animal(String name, String type, int health, int food, boolean avail){
+		//ім'я, що за тварина, здоров'я, харчування, в зоопарку чи втік(тру, фолс)
+		this.name = name;//this обов'зково?
+		this.type = type;
+		this.health = health;
+		this.food = food;
+		this.avail = avail;
+	}
+	public String getName(){ // метод повертає ім'я
+		return this.name;
+	}
+	
+	public String getType(){ // метод поветрає вік
+		return this.type;
+	}
+	
+	public int getHealth(){ // метод поветрає середній бал
+		return this.health;
+	}
+	
+	//public Animal changeGrade(double newgrade){
+		//averageGrade=newgrade;
+		//return this;
+	//}
+	
+	//public Student becomeOlder(){
+		//++age;
+		//return this;
+	//}
+
+}

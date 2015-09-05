@@ -1,0 +1,13 @@
+package ua.com.vita.MyClasses;
+
+public class IdealMen extends Men {
+	public IdealMen(String name, int age, String jobStatus) {
+		super(name, age, jobStatus);
+		// TODO Auto-generated constructor stub
+	}
+
+	public void buildHouse(){
+		House dom = new Cottage();
+		System.out.println(dom);
+	}
+}

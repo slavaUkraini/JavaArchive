@@ -1,0 +1,22 @@
+import java.math.BigInteger;
+
+
+public class FactCache {
+	static BigInteger[] factorValue = new BigInteger[21];//чому статік?
+	
+	public BigInteger fcache(int n){
+		BigInteger rez = null;
+		if(n == 0){
+			factorValue[n]=BigInteger.ONE;
+			rez = factorValue[n];
+		}
+		else if (n > 0 && n < 21) {
+			factorValue[n]=BigInteger.valueOf(n).multiply(fcache(n-1));
+			rez = factorValue[n];
+		}
+		else {
+			System.out.println("Неправильний n! ");
+		}
+		return rez;
+	}
+}

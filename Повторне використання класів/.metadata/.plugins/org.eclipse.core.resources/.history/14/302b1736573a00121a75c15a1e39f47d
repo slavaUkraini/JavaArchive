@@ -1,0 +1,9 @@
+package ua.com.vita.MyClasses;
+
+public class Men {
+	//Клас чоловіків
+	public void buildHouse(){
+		House dom = new House("Панель",1,4);
+		System.out.println(dom);
+	}
+}

@@ -1,0 +1,41 @@
+import java.io.IOException;
+public class Sorting {
+
+	/**
+	 * @param args
+	 */
+	
+	public static void main(String[] args) throws IOException {
+		
+		System.out.println("Hello, Vita!");
+		String s = DataInput.getString();//Чому стрінг з великої, а інт з маленької?????
+		System.out.println(s);
+		System.out.println("Введіть кількість елементів масиву");
+		
+		int n = DataInput.getInt();
+		int array [] = new int[n];
+		
+		System.out.println("Введіть масив: ");
+		
+		  for(int i = 0; i<n; ++i)
+		    array[i] = DataInput.getInt();
+		  //сортування методом вставки
+		  for (int i = 0; i<n; ++i)
+		  {
+		    int t = array[i];
+		    int j = 0;
+		    while (t > array[j])
+		    	j = j + 1;
+		    for (int k = i-1 ; k > i; --j)
+		      array[k] = array[k-1];
+		    array[j] = t;
+		  
+		  }
+		  for (int i = 0; i<n; ++i) 
+			  System.out.print(array[i]);
+	
+		
+
+	}
+
+}

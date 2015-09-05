@@ -1,0 +1,27 @@
+import java.io.IOException;
+public class tester {
+
+	/**
+	 * @param args
+	 * @throws IOException 
+	 */
+	public static void main(String[] args) throws IOException {
+		//Fizz test1 = new Fizz();
+		//test1.fizzbuzz(100);
+		
+		//Fib test2 = new Fib();
+		//test2.fibbon(20);
+		
+		/*Echo test3 = new Echo();
+		System.out.println("¬вед≥ть дан≥: ");
+		test3.s = DataInput.getString();
+		test3.echo();
+		test3.echoBack();*/
+		
+		Factorial1 test4 = new Factorial1();
+		System.out.println("¬вед≥ть n: ");
+		test4.n = DataInput.getInt();
+		test4.fib();
+	}
+
+}

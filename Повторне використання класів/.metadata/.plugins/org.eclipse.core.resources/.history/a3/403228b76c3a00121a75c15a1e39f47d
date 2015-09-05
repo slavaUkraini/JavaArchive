@@ -1,0 +1,20 @@
+package ua.com.vita.MyClasses;
+
+final class Tree {
+
+	public Tree(){
+		System.out.println("Посадили дерево");
+		this.type = "Дуб";
+	}
+	public void cutTree(){
+		//що робить final метод?
+		//Можна видалити об'єкт?
+		System.out.println("Ти зрубав дерево, скотина!");
+	}
+	public String toString(){
+		return type + " " + age + " років";
+	}
+private final String type;
+private int age = 10;
+
+}

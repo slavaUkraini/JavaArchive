@@ -1,0 +1,49 @@
+import java.io.IOException;
+public class Arrays {
+	int[] mass;
+	
+	public void createmass () throws IOException {
+		int i=5;
+		createmass(i);
+	}
+	public void createmass (int[]a) {//це коп≥юванн€ масиву
+		mass = new int[a.length];
+		for (int i = 0; i < a.length;i++){
+			mass[i] = a[i];
+		}	
+	}
+	public void createmass (int n)throws IOException {
+		mass = new int[n];
+		for (int i = 0; i < n; i++){
+			System.out.println("¬вед≥ть "+ (i+1) + " елемент масиву: ");
+			int temp = DataInput.getInt();
+			mass[i] = temp;
+		}
+	}
+	public void printmass () {
+		for (int i = 0; i < mass.length; i++){
+			System.out.print(mass[i]);
+		}
+	}
+	
+	public void sortvybir () {
+		for (int i = 0; i < mass.length; i++) {
+			  int min = mass[i];
+			  int imin = i; 
+			  for (int j = i+1; j < mass.length; j++) {
+				  if (mass[j] < min)
+				  {
+					  min = mass[j];
+			          imin = j;
+			          }
+			    }
+			    if (i != imin) {
+			        int temp = mass[i];
+			        mass[i] = mass[imin];
+			        mass[imin] = temp;
+			    }
+			}
+		 printmass();
+	}
+
+}

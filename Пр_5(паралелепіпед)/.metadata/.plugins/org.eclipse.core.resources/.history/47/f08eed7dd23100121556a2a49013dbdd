@@ -1,0 +1,48 @@
+package ua.com.vita.krainik.Pr5;
+
+//import javax.swing.text.Segment;
+/**
+ * Клас прямокутного паралелепіпеда
+ * поля - прямокутник(основа) і висота
+ * @author Vita Krainik
+ * @version 1.0 since 18.11.2012
+ */	
+
+public class Cuboid {
+	public Cuboid(double a, double b, double height){
+		Rectangle basis = new Rectangle(a,b);
+		this.height = new Segment(height);
+	}
+public String toString(){
+	return basis.toString() + height.toString();
+}	
+	//Поля - основа(прямокутник) і висота
+	private Rectangle basis;
+	private Segment height;
+}
+
+
+
+class Rectangle {
+	/* Клас прямокутника*/	
+
+	private static final double Pi = 3.14159;
+	Rectangle(double a, double b) {
+		this.segA = new Segment(a);
+		this.segB = new Segment(b);
+	}
+	//Поля - два відрізка і кут
+	private Segment segA;
+	private Segment segB;
+	private double angle = Pi/2;// кут 90 градусів
+}
+
+	class Segment{
+		Segment(double a) {
+			this.a = a;
+		}
+		//Клас відрізок
+		private double a;
+	}
+
+

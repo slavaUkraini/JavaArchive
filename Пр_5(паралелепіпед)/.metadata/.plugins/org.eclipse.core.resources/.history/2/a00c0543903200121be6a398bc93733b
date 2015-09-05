@@ -1,0 +1,16 @@
+package ua.com.vita.krainik.Testing.Programs;
+
+import ua.com.vita.krainik.Pr5.Cuboid;
+
+public class testerCuboid {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Cuboid one = new Cuboid(1,2,3);
+		System.out.println(one.toString());
+
+	}
+
+}

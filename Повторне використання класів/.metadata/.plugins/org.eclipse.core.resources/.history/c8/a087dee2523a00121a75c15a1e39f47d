@@ -1,0 +1,14 @@
+package ua.com.vita.Testers;
+import ua.com.vita.MyClasses.*;
+public class MainProgram {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Men one = new Men();
+		one.buildHouse();
+	}
+
+}

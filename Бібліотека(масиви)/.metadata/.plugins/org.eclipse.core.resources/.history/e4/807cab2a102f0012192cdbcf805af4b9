@@ -1,0 +1,31 @@
+import ua.com.vita.krainik.firstPackage.Factorial;
+
+public class TesterFactorial {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Factorial test = new Factorial();
+		System.out.println("‘актор≥ал 0 = " + test.cashFactorial(0));
+		System.out.println("---------------------------");
+		System.out.println("‘актор≥ал 5 = " + test.cashFactorial(5));
+		System.out.println("---------------------------");
+		System.out.println("‘актор≥ал 3 = " + test.cashFactorial(3));
+		System.out.println("---------------------------");
+		System.out.println("‘актор≥ал 6 = " + test.cashFactorial(6));
+		System.out.println("---------------------------");
+		System.out.println("ƒ€кую!");
+		Factorial test2 = new Factorial();
+		System.out.println("‘актор≥ал 0 = " + test.cashFactorial(0));
+		System.out.println("---------------------------");
+		System.out.println("‘актор≥ал 5 = " + test.cashFactorial(5));
+		System.out.println("---------------------------");
+		System.out.println("‘актор≥ал 3 = " + test.cashFactorial(3));
+		System.out.println("---------------------------");
+		System.out.println("‘актор≥ал 6 = " + test.cashFactorial(6));
+		System.out.println("---------------------------");
+		System.out.println("ƒ€кую!");
+	}
+
+}

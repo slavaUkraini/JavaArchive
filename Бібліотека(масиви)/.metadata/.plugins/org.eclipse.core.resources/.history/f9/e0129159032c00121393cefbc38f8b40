@@ -1,0 +1,102 @@
+package ua.com.vita.krainik.firstPackage; 
+/**
+ * Class Array
+ * Do not copy, it is my program.
+ * @author Vita Krainik
+ * @version 4.0 since 11.11.2012
+ */
+public class Array {
+	private int[] mass;
+	//private boolean filled;
+	
+	public Array(){
+		this(0);
+	}
+	public void addEnd(int n) {
+		//Додати елемент в кінець
+		Array tempMass = new Array(mass.length+1);
+		for (int i = 0; i < mass.length;i++)
+			tempMass.mass[i]=mass[i];
+		tempMass.mass[tempMass.mass.length-1] = n;
+		this.mass = tempMass.mass;//так можна чи ми граємось з посиланнями?
+	}
+	public void delEnd() {
+		//Видалити елемент з кінця
+		if (mass.length != 0){
+			delete(mass.length-1);
+		}
+	}
+	public void clear() {
+		//"Почистити" масив, видалити всі елементи
+		Array tempMass = new Array(0);
+		this.mass = tempMass.mass;
+	}
+	public void printmass () {
+		/*Вивід елементів масиву на екран*/
+		for (int i = 0; i < mass.length; i++){
+			System.out.print(mass[i] + " ");
+		}
+		System.out.println(" ");
+	}
+	public void sortZrost(){
+		//Сортування за зростанням vstavka
+		for(int i=0; i<mass.length;i++){
+			int copyNumber=mass[i];
+			int j = i;
+			while (j>0 && copyNumber < mass[j-1]){
+			mass[j]=mass[j-1]	;
+			j--;
+			}
+			mass[j]=copyNumber;
+		}
+		printmass();
+	}
+	public void sortSpad(){
+		//Сортування за спаданням
+		for(int i=0; i<mass.length;i++){
+			int copyNumber=mass[i];
+			int j = i;
+			while (j>0 && copyNumber > mass[j-1]){
+			mass[j]=mass[j-1]	;
+			j--;
+			}
+			mass[j]=copyNumber;
+		}
+		printmass();
+	}
+	public int getElement(int number){
+		//Функція повертає елемент за номером
+		if (number<0||number>=mass.length){
+			System.out.println("Error! Wrong number! Enter number from 0 to " + (mass.length-1));
+			return -1;
+		}
+		return mass[number];
+		}
+	public void findElement(int n){
+		//Знайти елемент за значенням
+		for (int i = 0; i<mass.length; i++){
+			if (mass[i] == n){
+				System.out.println("Element exist!" );
+				return;
+			}
+		}
+			System.out.println("Not found");
+		return;
+	}
+	public void delete(int n) {
+		//Видалити елемент за номером
+		if(mass.length != 0 && n>=0)
+		{
+		Array tempMass = new Array(mass.length-1);
+		for(int i = 0; i<mass.length-1; i++){
+			if (i>=n) {
+				mass[i]=mass[i+1];
+			}
+			tempMass.mass[i]=this.mass[i];
+		}
+		this.mass = tempMass.mass;}
+	}
+	private Array(int size) {
+		mass = new int[size];
+	}	
+}

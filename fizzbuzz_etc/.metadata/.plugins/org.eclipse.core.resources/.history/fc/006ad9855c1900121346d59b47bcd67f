@@ -1,0 +1,16 @@
+import java.math.BigInteger;
+
+
+public class FactCache {
+	static BigInteger[] factorValue = new BigInteger[21];
+	
+	public BigInteger fcache(int n){
+		if(n == 0){
+			factorValue[n]=BigInteger.ONE;
+		}
+		else {
+			factorValue[n]=BigInteger.valueOf(n).multiply(fcache(n-1));
+		}
+		return factorValue[n];
+	}
+}

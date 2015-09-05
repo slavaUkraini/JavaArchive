@@ -1,0 +1,30 @@
+package ua.com.vita.MyClasses;
+
+public class Cottage  extends House {
+	//наш новий клас - це має бути частковий випадок
+	//чи удосконалений попередній клас
+	private int price;
+	private Pool pool;
+	{
+		price = 100000;
+		pool = new Pool();
+	}
+	public Cottage() {
+		super("Цегла", 2, 8);
+		System.out.println("Це вже не просто будинок, це котедж.");
+	}
+	
+	public String toString(){
+		//пробуємо різні способи ініціалізації
+		//відкладена ініціалізація
+		if (pool==null) pool = new Pool();
+		return super.toString()+ " Ціна = " + price + "\n і плюс є басейн";
+	}
+
+	private class Pool{
+		public Pool(){
+			System.out.println("Ми купили басейн.");
+			}
+		private double size = 100;
+		}
+}

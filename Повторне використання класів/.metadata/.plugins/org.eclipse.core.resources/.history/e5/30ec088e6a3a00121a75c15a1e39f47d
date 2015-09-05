@@ -1,0 +1,26 @@
+package ua.com.vita.Testers;
+import ua.com.vita.MyClasses.*;
+public class MainProgram {
+
+	/**
+	 * @param args
+	 * @throws Throwable 
+	 */
+	public static void main(String[] args) throws Throwable {
+		// TODO Auto-generated method stub
+		Men one = new Men("Чарлі",20,"Вчитель математики");
+		//one.buildHouse();
+		//System.out.println(one);
+		IdealMen ideal = new IdealMen("Богдан", 22, "Програміст", "Аспірант");
+		System.out.println(ideal);
+		System.out.println();
+		ideal.buildHouse();
+		System.out.println();
+		ideal.plantTree();
+		System.out.println();
+		//ууу, що це?(((( Де моє висхідне перетворення?
+		//IdealMen son = (IdealMen) ideal.bornSon("Вася");
+		System.out.println("\nСин " + ideal.bornSon("Вася"));
+	}
+
+}

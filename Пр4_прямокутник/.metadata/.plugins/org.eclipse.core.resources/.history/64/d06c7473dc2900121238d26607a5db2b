@@ -1,0 +1,20 @@
+
+public class Encryption {
+private String s;
+static String alphabet_rus = "";
+
+public Encryption(){
+	this("אבגדהוזח");
+	for(char ch='א';ch<='ÿ';ch++){
+        alphabet_rus+=ch;
+    }
+}
+public Encryption(String s){
+	this.s = s;
+	for(char ch='א';ch<='ÿ';ch++){
+        alphabet_rus+=ch;
+    }
+}
+
+}
+

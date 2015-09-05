@@ -1,0 +1,42 @@
+import java.awt.geom.Point2D;
+import java.io.IOException;
+
+
+public class Testing {
+
+	/**
+	 * @param args
+	 * @throws IOException 
+	 */
+	public static void main(String[] args) throws IOException {
+		System.out.println("Адреса");
+		Adress example = new Adress();
+		System.out.println(example.toString());
+		System.out.println("");
+		
+		System.out.println("Тестувальник для прямокутника");
+		Rectangle rect = new Rectangle();
+		System.out.println(rect.toString());
+		Point2D.Double toch = new Point2D.Double(3,4);
+		System.out.println("Створюємо точку з координатами (3,4), " +
+				"яка знаходиться в центрі прямокутника");
+		System.out.println("Метод перевірки середини повертає: " + rect.checkCentre(toch));
+		System.out.println("Переміщуємо прямокутник, наприклад вліво на 3 і робимо попередню дію");
+		rect.moveleft(3);
+		System.out.println(rect.toString());
+		System.out.println("Метод перевірки середини повертає: " + rect.checkCentre(toch));
+		
+		System.out.println("");
+		System.out.println("Шифрування коду");
+		System.out.println("");
+		Encryption one = new Encryption();
+		System.out.println(one.toString());
+		System.out.println("Шифруєм зі зсувом на 1, 33 і -1 позиції");
+		System.out.println(one.encode(1));
+		System.out.println(one.encode(33));
+		System.out.println(one.encode(-1));
+		System.out.println("Розкодовуємо");
+		System.out.println(one.decode());
+	}
+
+}

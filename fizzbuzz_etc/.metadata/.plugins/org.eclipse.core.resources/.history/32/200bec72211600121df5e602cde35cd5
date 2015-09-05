@@ -1,0 +1,13 @@
+
+public class Fibonacci1 {
+	int n;
+	
+	public int fib(){
+		int res = 1;
+		for (int i=1; i<=n; i++){
+			res=i*res;
+		}
+		return res;
+	}
+
+}

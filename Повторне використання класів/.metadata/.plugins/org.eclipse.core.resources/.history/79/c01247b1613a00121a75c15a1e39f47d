@@ -1,0 +1,19 @@
+package ua.com.vita.MyClasses;
+
+final class Tree {
+
+	public Tree(){
+		this.type = "ƒуб";
+	}
+	public void cutTree() throws Throwable{
+		//чи можуть бути методи final?
+		this.finalize();
+	}
+	public String toString(){
+		return type + " " + age + " рок≥в";
+		
+	}
+private final String type;
+private int age = 10;
+
+}
